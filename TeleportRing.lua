@@ -1,9 +1,7 @@
-quest TeleportRing_Z begin
+quest teleportRing begin
 	state start begin
-		when 39073.use begin
-			local ItemVnum = item.get_vnum();
-			
-			TeleportRing.MainWindow(ItemVnum);
+		when 39073.use begin		
+			TeleportRing.MainWindow(item.get_vnum());
 		end
 	end
 end
